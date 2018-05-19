@@ -1,0 +1,44 @@
+{
+	"include": [
+		"./src/**/*"
+	],
+	"exclude": [
+		"./assets",
+		"./doc",
+		"./kubefiles",
+		"./node_modules",
+		"./out",
+		"./resources",
+		"./run",
+		"./tmp"
+	],
+	"compilerOptions": {
+		"outDir": "./out",
+
+		"baseUrl": "./src",
+		"paths": {
+			"admin/*": [ "admin/*"],
+			"app/*": [ "app/*" ],
+			"base/*": [ "base/*" ],
+			"front/*": [ "front/*" ],
+			"test/*": [ "test/*" ]
+		},
+
+		"allowJs": false,
+		"declaration": true,
+		"experimentalDecorators": true,
+		"lib": [
+			"dom",
+			"es2017"
+		],
+		"jsx": "react",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"noImplicitAny": false,
+		"preserveConstEnums": true,
+		"removeComments": true,
+		"sourceMap": true,
+		"suppressImplicitAnyIndexErrors": true,
+		"target": "es6"
+	}
+}
